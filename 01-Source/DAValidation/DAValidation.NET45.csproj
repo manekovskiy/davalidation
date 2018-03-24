@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E2F91440-B1C3-48CC-9254-04CDB3B9A959}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAValidation</RootNamespace>
+    <AssemblyName>DAValidation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+		<OutputPath>..\Build\NET45_$(Configuration)</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS;NET45</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\RuleSet.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE;CODE_ANALYSIS;NET45</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>DAValidation.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeExpressionBuilder.cs" />
+    <Compile Include="ControlExtensions.cs" />
+    <Compile Include="CreditCardAttributeAdapter.cs" />
+    <Compile Include="CreditCardClientValidationRule.cs" />
+    <Compile Include="DataAnnotationsValidator.cs" />
+    <Compile Include="EmailAddressAttributeAdapter.cs" />
+    <Compile Include="EmailAddressClientValidationRule.cs" />
+    <Compile Include="FileExtensionsClientValidationRule.cs" />
+    <Compile Include="FileExtensionsAttributeAdapter.cs" />
+    <Compile Include="MaxLengthAttributeAdapter.cs" />
+    <Compile Include="MaxLengthClientValidationRule.cs" />
+    <Compile Include="MetadataSource.cs" />
+    <Compile Include="MinLengthAttributeAdapter.cs" />
+    <Compile Include="MinLengthClientValidationRule.cs" />
+    <Compile Include="PhoneAttributeAdapter.cs" />
+    <Compile Include="PhoneClientValidationRule.cs" />
+    <Compile Include="RegularExpressionClientValidationRule.cs" />
+    <Compile Include="ClientValidationRulesProvider.cs" />
+    <Compile Include="RangeClientValidationRule.cs" />
+    <Compile Include="RegularExpressionAttributeAdapter.cs" />
+    <Compile Include="RequiredAttributeAdapter.cs" />
+    <Compile Include="RequiredClientValidationRule.cs" />
+    <Compile Include="StringLengthClientValidationRule.cs" />
+    <Compile Include="RangeAttributeAdapter.cs" />
+    <Compile Include="UrlAttributeAdapter.cs" />
+    <Compile Include="UrlClientValidationRule.cs" />
+    <Compile Include="ValidationAttributeAdapter.cs" />
+    <Compile Include="ValidationAttributeAdapterFactory.cs" />
+    <Compile Include="IClientValidatable.cs" />
+    <Compile Include="ClientValidationRule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringLengthAttributeAdapter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DAValidation.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DAValidation.NET45.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{163047E2-DDA8-4625-9342-EC0EDAF8D260}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAValidation.Sample</RootNamespace>
+    <AssemblyName>DAValidation.Sample</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET45</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;CODE_ANALYSIS;NET45</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\default\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\default\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="App_Themes\default\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="App_Themes\default\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="App_Themes\default\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="App_Themes\default\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="App_Themes\default\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="App_Themes\default\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="App_Themes\default\images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\default\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Themes\default\images\ui-icons_454545_256x240.png" />
+    <Content Include="App_Themes\default\images\ui-icons_888888_256x240.png" />
+    <Content Include="App_Themes\default\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\default\jquery-ui-1.8.16.custom.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Pages\CustomAttribute.aspx" />
+    <Content Include="Pages\GridStronglyTypedBindings.aspx" />
+    <Content Include="Pages\GridViewInlineEdit.aspx" />
+    <Content Include="Pages\NewAttibutesInNET45.aspx" />
+    <Content Include="Pages\RangeAttributeExample.aspx" />
+    <Content Include="Pages\SimpleModel.aspx" />
+    <Content Include="Pages\UpdatePanelExample.aspx" />
+    <Content Include="Pages\ValidationGroups.aspx" />
+    <Content Include="Scripts\jquery-1.6.2.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="App_Themes\default\shCoreDefault.css" />
+    <Content Include="Scripts\syntaxHighlighter.js" />
+    <Content Include="UserControls\AccountInformationEdit.ascx" />
+    <Content Include="UserControls\CodeViewer.ascx" />
+    <Content Include="UserControls\ContactInformationEdit.ascx" />
+    <Content Include="UserControls\CustomerEdit.ascx" />
+    <Content Include="UserControls\RangesEdit.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\AccountInformation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountInformation.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomValidationAttributes\ValidatePasswordLengthAttribute.cs" />
+    <Compile Include="Entities\AccountInformation.cs" />
+    <Compile Include="Entities\ContactInformation.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\RangesModel.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CustomAttribute.aspx.cs">
+      <DependentUpon>CustomAttribute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CustomAttribute.aspx.designer.cs">
+      <DependentUpon>CustomAttribute.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GridStronglyTypedBindings.aspx.cs">
+      <DependentUpon>GridStronglyTypedBindings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GridStronglyTypedBindings.aspx.designer.cs">
+      <DependentUpon>GridStronglyTypedBindings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GridViewInlineEdit.aspx.cs">
+      <DependentUpon>GridViewInlineEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GridViewInlineEdit.aspx.designer.cs">
+      <DependentUpon>GridViewInlineEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NewAttibutesInNET45.aspx.cs">
+      <DependentUpon>NewAttibutesInNET45.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\NewAttibutesInNET45.aspx.designer.cs">
+      <DependentUpon>NewAttibutesInNET45.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RangeAttributeExample.aspx.cs">
+      <DependentUpon>RangeAttributeExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\RangeAttributeExample.aspx.designer.cs">
+      <DependentUpon>RangeAttributeExample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SimpleModel.aspx.cs">
+      <DependentUpon>SimpleModel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SimpleModel.aspx.designer.cs">
+      <DependentUpon>SimpleModel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UpdatePanelExample.aspx.cs">
+      <DependentUpon>UpdatePanelExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\UpdatePanelExample.aspx.designer.cs">
+      <DependentUpon>UpdatePanelExample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ValidationGroups.aspx.cs">
+      <DependentUpon>ValidationGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ValidationGroups.aspx.designer.cs">
+      <DependentUpon>ValidationGroups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AccountInformationEdit.ascx.cs">
+      <DependentUpon>AccountInformationEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AccountInformationEdit.ascx.designer.cs">
+      <DependentUpon>AccountInformationEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CodeViewer.ascx.cs">
+      <DependentUpon>CodeViewer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CodeViewer.ascx.designer.cs">
+      <DependentUpon>CodeViewer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CodeViewerHelper.cs" />
+    <Compile Include="UserControls\ContactInformationEdit.ascx.cs">
+      <DependentUpon>ContactInformationEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ContactInformationEdit.ascx.designer.cs">
+      <DependentUpon>ContactInformationEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CustomerEdit.ascx.cs">
+      <DependentUpon>CustomerEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CustomerEdit.ascx.designer.cs">
+      <DependentUpon>CustomerEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RangesEdit.ascx.cs">
+      <DependentUpon>RangesEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\RangesEdit.ascx.designer.cs">
+      <DependentUpon>RangesEdit.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\AccountInformation.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>AccountInformation.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAValidation\DAValidation.NET45.csproj">
+      <Project>{E2F91440-B1C3-48CC-9254-04CDB3B9A959}</Project>
+      <Name>DAValidation.NET45</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2506</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

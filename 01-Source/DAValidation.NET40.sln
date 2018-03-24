@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAValidation.NET40", "DAValidation\DAValidation.NET40.csproj", "{E2F91440-B1C3-48CC-9254-04CDB3B9A959}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAValidation.Sample.NET40", "DAValidation.Sample\DAValidation.Sample.NET40.csproj", "{163047E2-DDA8-4625-9342-EC0EDAF8D260}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = DAValidation.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2F91440-B1C3-48CC-9254-04CDB3B9A959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2F91440-B1C3-48CC-9254-04CDB3B9A959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2F91440-B1C3-48CC-9254-04CDB3B9A959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2F91440-B1C3-48CC-9254-04CDB3B9A959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{163047E2-DDA8-4625-9342-EC0EDAF8D260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163047E2-DDA8-4625-9342-EC0EDAF8D260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163047E2-DDA8-4625-9342-EC0EDAF8D260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163047E2-DDA8-4625-9342-EC0EDAF8D260}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

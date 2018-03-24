@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DAValidation.Sample.Site" EnableTheming="true" %>
+<%@ Register Src="~/UserControls/CodeViewer.ascx" TagPrefix="uc" TagName="CodeViewer" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title></title>
+</head>
+<body>
+	<form runat="server">
+	<asp:ScriptManager runat="server" ID="scriptManager" AjaxFrameworkMode="Explicit">
+		<Scripts>
+			<asp:ScriptReference Name="jquery" />
+			
+			<asp:ScriptReference Name="WebForms.js" Assembly="System.Web" />
+			<asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" />
+			
+			<asp:ScriptReference Name="MicrosoftAjaxCore.js" />
+			<asp:ScriptReference Name="MicrosoftAjaxSerialization.js" />
+			<asp:ScriptReference Name="MicrosoftAjaxNetwork.js" />
+			<asp:ScriptReference Name="MicrosoftAjaxComponentModel.js" />
+			<asp:ScriptReference Name="MicrosoftAjax.js" />
+
+			<asp:ScriptReference Name="MicrosoftAjaxWebForms.js" />
+			
+			<asp:ScriptReference Name="jquery-ui" />
+			<asp:ScriptReference Name="syntaxHighlighter"/>
+		</Scripts>
+	</asp:ScriptManager>
+	<div>
+		<table>
+			<tr>
+				<td width="100">
+					<asp:Menu runat="server" ID="mainMenu">
+						<Items>
+							<asp:MenuItem Text="Simple model example"				NavigateUrl="~/Pages/SimpleModel.aspx" />
+							<asp:MenuItem Text="Custom Attribute implementation"	NavigateUrl="~/Pages/CustomAttribute.aspx" />
+							<asp:MenuItem Text="UpdatePanel example"				NavigateUrl="~/Pages/UpdatePanelExample.aspx" />
+							<asp:MenuItem Text="Validation groups"					NavigateUrl="~/Pages/ValidationGroups.aspx" /> 
+							<asp:MenuItem Text="RangeAttibute usage example"		NavigateUrl="~/Pages/RangeAttributeExample.aspx" />
+							<asp:MenuItem Text="GridView inline edit validation"	NavigateUrl="~/Pages/GridViewInlineEdit.aspx" />
+						</Items>
+					</asp:Menu>
+				</td>
+				<td>
+					<asp:ContentPlaceHolder runat="server" ID="cphRight" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div id="codeViewerTabs">
+						<uc:CodeViewer ID="CodeViewer1" runat="server" />
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+	<script type="text/javascript" language="javascript">
+		$(function () {
+			$(document).ready(function () {
+				$("#codeViewerTabs").tabs({ idPrefix: 'tab-' });
+				SyntaxHighlighter.all();
+			});
+		});
+	</script>
+	</form>
+</body>
+</html>
